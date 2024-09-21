@@ -8,11 +8,12 @@
 - Future Enhancements 
 - Installation
 - Usuage
-- Configuration
-- Examples
-- Contributing
-- License
-- Contact
+- Technologies Used 
+- Contributions/Developement Status 
+- Code Examples/Explaination of Key Sections
+- License and Acknowledgements 
+- Contact Information 
+
 
 ## Introduction 
 Future FurBaby is a two-page frontend application that tailored to cat enthusiast to browse through multiple cat breeds. This application has leverages a third-party API to access and display information about a varity of cat breeds, it then displays this on frontend is a visually appleasing and user-friendly display and it also leverages responsive design on the frontend, specifically in the styles.css file, to display this application on mobile as well. 
@@ -76,12 +77,40 @@ Project Structure: The main source code of this project is located in the ```src
 ├── photos/              # Directory containing images used in the app
 ├── d.ts                 # TypeScript declaration files for type definitions
 ```
-## Configuration 
+TypeScript Components: 
 
-## Examples 
+- ```App.tsx``` This is the main component of the project that sets everything up in the application. Modify this file to change how components are rendered 
+- ```Home.tsx``` This is the inital view of the project 
+- ```Navbar.tsx``` This handles navigation between different views and routes in the project 
+- ```Catbreads.tsx``` and ```Catcards.tsx``` These two files are responsible for displaying the cat information 
 
-## Contributing  
+Styling: 
 
-## License 
+The styles are defined in ```styles/main.scss```. Update this file if you want to make changes to the appreance and engagment of the project  
 
-## Contact
+
+## Technologies Used  
+
+- React (frontend)
+- TypeScript (strong typing)
+- Node.js and NPM (package management)
+- Git and Github (version control)
+
+## Contributions/Developement State   
+
+This project was in collaboration with evynrose Evyn-Rose Goldstein. Contributions are welcome to contribute
+
+- Fork the repo: Click on the ```fork``` button to create your own personal copy of the repo on your GitHub.
+- Clone the repo: Instructions for cloning the repo is on top of the Installation section 
+- Create a branch: Create a branch using the this code in git ```git checkout -b feature-branch-name```
+- Make changes and commit: Once you've made your changes to your local copy commit the changes you made, you can do this with this code ```git commit -m "Description of changes"```
+- Push the changes: After the made and committed the changes push your branch back into the for, you do this with this code ```git push origin feature-branch-name```
+- Open a Pull request:
+  1. After you have pushed your changes onto your fork go to the original GitHub repo click on "pull request" then click "New pull request" and click base this will give you the option on which branch you want to merge your branch with this is usually the main or master, in the compare button next to it select the branch you created that has the changes you added. GitHub will show you the changes you made review you are happy with them and them 
+
+
+## Code Examples/Explaination of Key Sections
+
+## License and Acknowledgements
+
+## Contact Information
