@@ -113,10 +113,19 @@ This project was in collaboration with evynrose Evyn-Rose Goldstein. Contributio
 
   
 
-## Code Examples/Explaination of Key Sections
+## Code Examples/Explaination of Key Section
 
 
 
 ## License and Acknowledgements
+
+This project was built using the following technologies: 
+
+- React - A JavaScript library used for building user interfaces.
+- TypeScript - A strongly type programming language that build on JavaScript.
+- Vite - A mondern frontend building tool used for faster development.
+- Bulma - A mondern CSS framework based on Flexbox.  
+
+
 
 ## Contact Information
