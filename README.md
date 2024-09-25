@@ -2,67 +2,87 @@
 
 
 
+
 ## Table of Contents
 - Introduction
 - Features
 - Future Enhancements 
 - Installation
-- Usuage
-- Technologies Used 
-- Contributions/Developement Status 
-- Code Examples/Explaination of Key Sections
+- Usage
+- Technologies Used
+- Testing 
+- Contributions/Development Status 
 - License and Acknowledgements 
 - Contact Information 
 
 
+
 ## Introduction 
-Future FurBaby is a two-page frontend application that tailored to cat enthusiast to browse through multiple cat breeds. This application has leverages a third-party API to access and display information about a varity of cat breeds, it then displays this on frontend is a visually appleasing and user-friendly display and it also leverages responsive design on the frontend, specifically in the styles.css file, to display this application on mobile as well. 
+Future FurBaby is a two-page frontend application designed for cat enthusiasts to explore various cat breeds. It leverages a third-party API to fetch and display detailed information about a variety of cat breeds in a visually appealing and user-friendly format. The app includes a dynamic search feature with auto-suggestions and ensures a responsive design for both desktop and mobile views. 
+
+
 
 ## Features 
-- Responsive Design
-- API integration
-- TypeScript Type Safety
-- Basic State Management 
-- Dynamic Search with Auto-Suggestions
-- **Lazy Loading (via API)**: The project dynamically loads more breeds as the user scrolls down, leveraging the API's built-in pagination to optimize loading times.
+- Responsive Design: Ensures the application is accessible across different devices, including mobile, tablet, and desktop. 
+- API integration: Fetches cat breed data from The Cat API. 
+- TypeScript Type Safety: Ensures robust type-checking throughout the codebase. 
+- Basic State Management: Uses React's ```useState``` and ```useEffect``` for managing component state and side effects.
+- Dynamic Search with Auto-Suggestions: As users type in the search bar, they get instant suggestions matching their input.
+- **Lazy Loading (via API)**: Dynamically loads more breeds as users scoll down, leveraging the API's built-in pagination to optimize performance and reducing loading times.
+
+
 
 ## Future Enhancements 
-If further development were to be done on this project, the following features could be implemented:
+Potential future enhancements include:
 
-- Error handling for API requests, when there are networking errors or API failed requests it will display a message saying there has been a problem with your request or connection.  
-- Loading indicators, while the pages are loading it will display a symbol while making network connections.  
-- User Authentication, this will enable users to create and login into accounts on the websites and save certain breeds they were previously looking at.
-- Pagination/Lazy Loading, this will enable the website to load more sets of cat breeds efficiently, improving performance and UX.
-- Multiple API integrations, using multiple API's such as dog API's, reptile API's etc to display multiple animals for users to browse.
-- Booking software, this will allow the user to book a 30 minute window with the their desired breed to confirm their adoption.
-- Breed Comparison Tool, this will allow users to compare characteristics between multiple breeds side-by-side.
-- Breed Voting System, this will allow users to vote for their favorite breeds and display the most popular breeds in real time.
-- Advanced Filtering Options, add extra filters to search by traits like temperament, size, or origin to help users find the breed that fits their preferences.  
+- Error handling: Displays user-friendly error messages in case of API failure or network issues.
+- Loading indicators: Implement visual indicators during API calls to enhance user experience.   
+- User Authentication: Allows users to login and save their favourite breeds. 
+- Advanced Pagination: Efficiently load and paginate cat breeds for better performance. 
+- Multiple API integrations: Add other animal APIs (e.g dogs reptiles) for expanding browsing options.
+- Booking software: Allows users to book appointments to meet or adopt specific breeds. This could be integrated with shelter or breeder databases and include calendar functionality to schedule meetings, either in-person or virtually.  
+- Breed Comparison Tool: Enables users to compare characteristics of multiple breeds side-by-side. 
+- Breed Voting System: Allows users to vote for their favourite breeds and display the most popular ones.   
+- Advanced Filtering: Filter breeds based on temperament, size or other traits to help users find their ideal pet.
+
+
 
 ## Installation
-Clone this repository:  
-- git clone git@github.com:SadeSiddiqui/SEB-project-2.git
-- cd SEB-project-2
-  
-You have to set up SSH keys to clone this repo onto your computer, but if you are not familiar with SSH keys then use the instructions below:
 
-- git clone https://github.com/SadeSiddiqui/SEB-project-2.git
-- cd SEB-project-2
+1) First clone the repository to your local machine:
+ 
+```git clone git@github.com:SadeSiddiqui/SEB-project-2.git```
 
-Install Dependices:
-Run the following commands to install all the packages
+```cd SEB-project-2```
 
-- npm install
-- npm install bulma react react-dom react-router-dom
-- npm install --save-dev @types/react @types/react-dom @types/react-router-dom @vitejs/plugin-react sass typescript vite
+Alternatively, if your unfamiliar with SSH, use HTTPS: 
 
-Running the developement server: 
-To start the project run the following npm command in the terminal
+```git clone https://github.com/SadeSiddiqui/SEB-project-2.git```
 
-- npm run dev 
+```cd SEB-project-2```
 
-## Usuage  
-Project Structure: The main source code of this project is located in the ```src``` folder, the image below shows a folder tree of the ```src``` folder including the files and their purposes. 
+2) Install Dependencies:
+
+After you've cloned the repo, install all the necessary packages: 
+
+```npm install```
+
+```npm install bulma react react-dom react-router-dom```
+
+```npm install --save-dev @types/react @types/react-dom @types/react-router-dom @vitejs/plugin-react sass typescript vite```
+
+3) Running the development server: 
+
+To start the development server, run the following command: 
+
+```npm run dev```
+
+
+
+## Usage  
+### Project Structure 
+
+The main source code of this project is located in the ```src``` folder as follows: 
 
 ``` src/
 ├── components/
@@ -77,56 +97,87 @@ Project Structure: The main source code of this project is located in the ```src
 ├── photos/              # Directory containing images used in the app
 ├── d.ts                 # TypeScript declaration files for type definitions
 ```
-TypeScript Components: 
+### Main Components: 
 
-- ```App.tsx``` This is the main component of the project that sets everything up in the application. Modify this file to change how components are rendered 
-- ```Home.tsx``` This is the inital view of the project 
-- ```Navbar.tsx``` This handles navigation between different views and routes in the project 
-- ```Catbreads.tsx``` and ```Catcards.tsx``` These two files are responsible for displaying the cat information 
+- ```App.tsx```: Main component that sets up routing and renders the app. 
+- ```Home.tsx```: Display the homepage content, including the cat breed list. 
+- ```Navbar.tsx```: Navigation bar allows users to switch between views.  
+- ```Catbreeds.tsx``` and ```Catcards.tsx```: These handle fetching and displaying the cat breeds.
 
-Styling: 
+### Styling: 
 
-The styles are defined in ```styles/main.scss```. Update this file if you want to make changes to the appreance and engagment of the project  
+All styling is handled in ```styles/main.scss```. Modify this file to make changes to the appearance and user experience of the the app.
+
 
 
 ## Technologies Used  
 
-- React (frontend)
-- TypeScript (strong typing)
-- Node.js and NPM (package management)
-- Git and Github (version control)
+- React: JavaScript library for building user interfaces.
+- TypeScript: Superset of JavaScript providing static type definitions.
+- Vite: Modern build tool for faster development. 
+- Node.js and NPM: Package installation and management tools. 
+- Bulma: CSS framework for responsive design and layout. 
+- SASS: CSS preprocessor for easier styling. 
+- Git & Github: Version control and project collaboration tools
 
-## Contributions/Developement State   
 
-This project was in collaboration with evynrose Evyn-Rose Goldstein. Contributions are welcome to contribute
 
-- Fork the repo: Click on the ```fork``` button to create your own personal copy of the repo on your GitHub.
-- Clone the repo: Instructions for cloning the repo is on top of the Installation section 
-- Create a branch: Create a branch using the this code in git ```git checkout -b feature-branch-name```
-- Make changes and commit: Once you've made your changes to your local copy commit the changes you made, you can do this with this code ```git commit -m "Description of changes"```
-- Push the changes: After the made and committed the changes push your branch back into the for, you do this with this code ```git push origin feature-branch-name```
-- Open a Pull request:
+## Testing 
+
+Although this project doesn't include automated tests, it was manually tested for functionality. Future improvements could involve: 
+
+- Unit tests for individual components using Jest.
+- End-to-end tests using Cypress to simulate user interactions. 
+
+
+## Contributions/Development State   
+
+This project is currently in its MVP state and it was collaborated with Evyn-Rose Goldstein [evynrose](https://github.com/evynrose). If you would like to contribute follow these steps: 
+
+1) Fork the repo: Click on the ```Fork``` button at the top-right corner of the GitHub repository, to create your own personal copy of the repo on your GitHub.
+
+2) Clone the repo:
+
+```git clone https://github.com/your-username/SEB-project-2.git``` 
+
+3) Create a branch:
+
+```git checkout -b feature-branch-name```
+
+4) Make changes and commit: Add features or fix bugs. 
+
+5) Commit and push:
+
+```git commit -m "Description of changes"```
+
+```git push origin feature-branch-name```
+
+6) Open a Pull request:
   1. After you have pushed your changes onto your fork go to the original GitHub repo click on ```pull request```. 
   2. Click ```base``` this will give you the option on which branch you want to merge your branch with this is usually the ```main``` or ```master```.
-  3. Then click on the ```compare``` button next to it select the your branch that has the changes you added.
+  3. Then click on the ```compare``` button next to it select your branch that has the changes you added.
   4. Click ```New pull request``` and , and GitHub will show you the changes you made review you are happy with them and submit them.
-
-  
-
-## Code Examples/Explaination of Key Section
 
 
 
 ## License and Acknowledgements
 
-This project is licensed under the MIT License. See the [LICENSE]file for details.
+Licensing: This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
-This project was built using the following technologies: 
+Acknowledgements: A big thank you to collaborator Evyn-Rose Goldstein [evynrose](https://github.com/evynrose) with her help in this project and thanks to That API Company for providing the Cat API.
 
-- React - A JavaScript library used for building user interfaces.
-- TypeScript - A strongly type programming language that build on JavaScript.
-- Vite - A mondern frontend building tool used for faster development.
-- Bulma - A mondern CSS framework based on Flexbox.  
 
 
 ## Contact Information
+
+Feel free to reach out for questions or collaboration opportunities: 
+
+Syed Siddiqui: 
+
+[LinkedIn](https://www.linkedin.com/in/syed-siddiqui/)
+
+[Email](syedsiddiqui1@gmail.com)
+
+Evyn-Rose Goldstein: 
+
+[LinkedIn](https://www.linkedin.com/in/evynrose/)
