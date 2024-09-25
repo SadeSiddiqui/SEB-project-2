@@ -106,13 +106,11 @@ This project was in collaboration with evynrose Evyn-Rose Goldstein. Contributio
 - Make changes and commit: Once you've made your changes to your local copy commit the changes you made, you can do this with this code ```git commit -m "Description of changes"```
 - Push the changes: After the made and committed the changes push your branch back into the for, you do this with this code ```git push origin feature-branch-name```
 - Open a Pull request:
-  1. After you have pushed your changes onto your fork go to the original GitHub repo click on "pull request" then click "New pull request" and click base this will give you the option on which branch you want to merge your branch with this is usually the main or master, in the compare button next to it select the branch you created that has the changes you added. GitHub will show you the changes you made review you are happy with them and them
-  2. ffff
-  3. ffff
-  4. fff
-  5. fff
-  6. fff
-
+  1. After you have pushed your changes onto your fork go to the original GitHub repo click on ```pull request```. 
+  2. Click ```base``` this will give you the option on which branch you want to merge your branch with this is usually the ```main``` or ```master```.
+  3. Then click on the ```compare``` button next to it select the your branch that has the changes you added.
+  4. Click ```New pull request``` and , and GitHub will show you the changes you made review you are happy with them and submit them.
+  
 
 ## Code Examples/Explaination of Key Sections
 
