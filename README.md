@@ -110,9 +110,12 @@ This project was in collaboration with evynrose Evyn-Rose Goldstein. Contributio
   2. Click ```base``` this will give you the option on which branch you want to merge your branch with this is usually the ```main``` or ```master```.
   3. Then click on the ```compare``` button next to it select the your branch that has the changes you added.
   4. Click ```New pull request``` and , and GitHub will show you the changes you made review you are happy with them and submit them.
+
   
 
 ## Code Examples/Explaination of Key Sections
+
+
 
 ## License and Acknowledgements
 
